@@ -1110,7 +1110,7 @@
     function product_thumb() {
         $('.product-dec-slider-2').slick({
             infinite: true,
-            slidesToShow: 5,
+            slidesToShow: 4,
             vertical: true,
             verticalSwiping: true,
             centerPadding: '0',

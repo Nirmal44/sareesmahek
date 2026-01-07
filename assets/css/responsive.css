@@ -137,6 +137,14 @@
 }
 
 @media only screen and (max-width: 991px) {
+	
+	
+	.productDe_BigImg {
+        width: 100%;
+        height: 355px;
+        object-fit: cover;
+	}
+	
     html { overflow-x:hidden; }
     .btn-lg { padding: 10px 20px; }
     .btn-big, .btn-sm { font-size: 14px; }
@@ -226,7 +234,7 @@
     .collection-banners.style1 .btn--link.fs-6 { font-size: 13px !important; }
 
     .template-collection .collection-header { margin-bottom:20px; }
-    h1.product-single__title, .product-single__title.h1 { font-size:16px; }
+    h1.product-single__title, .product-single__title.h1 { font-size:22px; }
     .product-form .swatch .swatchLbl.xlarge { width: 45px; height: 45px; }
 
     .product-details-img .product-tab-left .slick-prev, 
@@ -464,6 +472,7 @@
 			height:260px;
 			object-fit:cover;
 		}
+		
 	
 }
 
@@ -905,7 +914,11 @@
 			height:350px;
 			object-fit:cover;
 		}
-
+.productDe_BigImg {
+		width: 100%;
+		height: 535px;
+		object-fit: cover;
+	}
 
 }
 
@@ -1042,6 +1055,12 @@
 		height:230px;
 		object-fit:cover;
 	}
+	.productDe_BigImg {
+		width: 100%;
+		height: 385px;
+		object-fit: cover;
+	}
+	
 
 }
 
@@ -1096,6 +1115,13 @@
     .index-demo6 .top-info-bar .btn-close { top: 0; right: 0; }
     .index-demo10 .top-bar { font-size: 11px; }
     .index-demo23 .collection-slider-4items .btn--small { padding: 9px 15px; }
+	
+	.productDe_BigImg {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+	}
+	
 
 }
 
