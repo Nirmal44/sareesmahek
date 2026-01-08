@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!--Required Meta Tags-->
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="description">
+      <!-- Title Of Site -->
+      <title>Mahek Sarees | Checkout</title>
+      <!-- Favicon -->
+      <!-- Plugins CSS -->
+      <link rel="stylesheet" href="assets/css/plugins.css" />
+      <!-- Main Style CSS -->
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/responsive.css" />
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   </head>
+   <body class="template-index index-demo3">
+      <!--Page Wrapper-->
+      <div class="page-wrapper">
+         <!--Body Container-->
+         <div id="page-content">
+            <!--Main Content-->
+            <div class="container-fluid checkOut">
+               <div class="row">
+                  <!-- Left Section - Scrollable -->
+                  <div class="col-lg-7 left-section">
+                     <div class="checkout-container">
+                        <!-- Header -->
+                        <div class="header mb-4">
+                           <a href="index.html">
+                           <img src="assets/images/mahek_sarees_logo.svg" class="logo-img default-logo mh-100" alt="" title="" width="50" />
+                           </a>
+                        </div>
+                        <!-- Mobile: Order Summary First -->
+                        <div class="mobile-order-summary">
+                           <div class="order-summary">
+                              <!-- Cart Icon -->
+                              <div class="cart-icon-top">
+                                 <i class="fas fa-shopping-bag"></i>
+                              </div>
+                              <!-- Product Items -->
+                             <div class="product-item">
+                                 <div class="product-image-wrapper">
+                                    <img class="cart__image blur-up lazyload" data-src="assets/images/cate2.png" src="assets/images/cate2.png" alt="" width="80" />
+                                 </div>
+                                 <div class="product-details">
+                                    <h6>Premium Embroidered Net Saree Collection</h6>
+                                    <p class="text-muted small mb-0 fm_lato">Color: Red</p>
+									<p class="text-muted small mb-0 fm_lato">Size: XL</p>
+									<p class="text-muted small mb-0 fm_lato">quantity:  2</p>
+                                 </div>
+                                 <div class="product-price fm_lato">
+                                    ₹4,500.00
+                                 </div>
+                              </div>
+                              <div class="product-item">
+                                 <div class="product-image-wrapper">
+                                    <img class="cart__image blur-up lazyload" data-src="assets/images/ps10-1.jpg" src="assets/images/ps10-1.jpg" alt="" width="80" />
+                                 </div>
+                                 <div class="product-details">
+                                    <h6>Timeless Wave Pattern Designer Lehenga</h6>
+                                    <p class="text-muted small mb-0 fm_lato">Color: ivory</p>
+									<p class="text-muted small mb-0 fm_lato">Size: XL</p>
+									<p class="text-muted small mb-0 fm_lato">quantity:  1</p>
+                                 </div>
+                                 <div class="product-price fm_lato">
+                                    ₹5,500.00
+                                 </div>
+                              </div>
+                              <!-- Discount Code -->
+                              <div class="discount-section">
+                                 <input type="text" class="form-control" placeholder="Discount code">
+                                 <button class="btn btn-outline-secondary">Apply</button>
+                              </div>
+                              <!-- Summary -->
+                              <div class="summary-line">
+                                 <span>Subtotal · 3 items</span>
+                                 <span class="fm_lato">₹14,500.00</span>
+                              </div>
+                              <div class="summary-line">
+                                 <span>Shipping</span>
+                                 <span class="text-muted small fm_lato">FREE</span>
+                              </div>
+                              <div class="summary-total">
+                                 <span>Total</span>
+                                 <div>
+                                    <span class="currency">INR</span>
+                                    <span class="total-amount fm_lato">₹14,500.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Contact Section -->
+                        <div class="section-box mb-4">
+                           <div class="d-flex justify-content-between align-items-center mb-3">
+                              <h5 class="mb-0">Contact</h5>
+                              <a href="#" class="sign-in-link" data-bs-toggle="modal" data-bs-target="#loginModal">Sign in</a>
+                           </div>
+                           <input type="text" class="form-control" id="contactEmail" placeholder="Email or mobile phone number">
+                           <div class="form-group col-md-12 col-lg-12 col-xl-12 mt-3">
+                              <div class="customCheckbox cart_tearm">
+                                 <input type="checkbox" class="form-check-input" id="account" value="">
+                                 <label for="account"><strong>Create an account ?</strong></label>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Delivery Section - Show address card if saved -->
+                        <div class="section-box mb-4">
+                           <div class="d-flex justify-content-between align-items-center mb-3">
+                              <h5 class="mb-0">Delivery Address</h5>
+                           </div>
+                           <!-- Saved Address Card -->
+                           <div id="savedAddressCard" style="display: none;">
+                              <div class="address-card">
+                                 <a href="#" class="edit-btn fm_lato" onclick="editAddress(); return false;">Edit</a>
+                                 <h6 id="savedName"></h6>
+                                 <p id="savedAddress" class="fm_lato"></p>
+                                 <p id="savedCityState" class="fm_lato"></p>
+                                 <p id="savedContact" class="fm_lato"></p>
+                              </div>
+                           </div>
+                           <!-- Add Address Button -->
+                           <button class="add-address-btn" id="addAddressBtn" data-bs-toggle="modal" data-bs-target="#addressModal">
+                           <i class="fas fa-plus me-2"></i>Add Delivery Address
+                           </button>
+                        </div>
+                        <!-- Payment Section -->
+                        <div class="section-box mb-4">
+                           <h5 class="mb-3">Payment</h5>
+                           <p class="text-muted small mb-3 fm_lato">All transactions are secure and encrypted.</p>
+                           <!-- Payment Method Tabs -->
+                           <ul class="nav nav-tabs payment-tabs mb-3" id="paymentTabs" role="tablist">
+                              <li class="nav-item" role="presentation">
+                                 <button class="nav-link active" id="card-tab" data-bs-toggle="tab" data-bs-target="#card-payment" type="button" role="tab">
+                                 <i class="fas fa-credit-card me-2"></i>Card
+                                 </button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                 <button class="nav-link" id="upi-tab" data-bs-toggle="tab" data-bs-target="#upi-payment" type="button" role="tab">
+                                 <i class="fas fa-mobile-alt me-2"></i>UPI
+                                 </button>
+                              </li>
+                           </ul>
+                           <!-- Payment Tab Content -->
+                           <div class="tab-content" id="paymentTabContent">
+                              <!-- Card Payment -->
+                              <div class="tab-pane fade show active" id="card-payment" role="tabpanel">
+                                 <div class="payment-option mb-3">
+                                    <div class="payment-header">
+                                       <span>Debit/Credit card</span>
+                                    </div>
+                                    <div class="payment-body">
+                                       <!-- Card Number -->
+                                       <div class="mb-3">
+                                          <div class="input-group">
+                                             <input type="text" class="form-control" placeholder="Card number" maxlength="19">
+                                             <span class="input-group-text bg-white">
+                                             <i class="fas fa-lock text-muted"></i>
+                                             </span>
+                                          </div>
+                                       </div>
+                                       <!-- Expiration & CVV -->
+                                       <div class="row mb-3">
+                                          <div class="col-md-6 mb-3 mb-md-0">
+                                             <input type="text" class="form-control" placeholder="Expiration date (MM / YY)" maxlength="7">
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Security code" maxlength="3">
+                                                <span class="input-group-text bg-white">
+                                                <i class="fas fa-question-circle text-muted"></i>
+                                                </span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- Name on Card -->
+                                       <div class="mb-3">
+                                          <input type="text" class="form-control" placeholder="Name on card">
+                                       </div>
+                                       <!-- Save Card Checkbox -->
+                                       <div class="customCheckbox cart_tearm">
+                                          <input type="checkbox" class="form-check-input" id="saveCard" value="">
+                                          <label for="saveCard"><strong>Save card for future?</strong></label>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- UPI Payment -->
+                              <div class="tab-pane fade" id="upi-payment" role="tabpanel">
+                                 <div class="payment-option mb-3">
+                                    <div class="payment-header">
+                                       <span>UPI Payment</span>
+                                    </div>
+                                    <div class="payment-body">
+                                       <!-- UPI ID -->
+                                       <div class="mb-3">
+                                          <label class="form-label small fm_lato">Enter your UPI ID</label>
+                                          <div class="input-group">
+                                             <span class="input-group-text bg-white">
+                                             <i class="fas fa-at text-muted"></i>
+                                             </span>
+                                             <input type="text" class="form-control" placeholder="username@upi" id="upiId">
+                                          </div>
+                                          <small class="text-muted fm_lato">Example: username@paytm, username@googlepay</small>
+                                       </div>
+                                       <!-- Verify UPI Button -->
+                                       <button type="button" class="btn btn-outline-primary w-100 mb-3" id="verifyUpiBtn">
+                                       <i class="fas fa-check-circle me-2 fm_lato"></i>Verify UPI ID
+                                       </button>
+                                       <!-- Popular UPI Apps -->
+                                       <!-- Save UPI Checkbox -->
+									   <div class="customCheckbox cart_tearm">
+                                          <input type="checkbox" class="form-check-input" id="saveUpi" value="">
+                                          <label for="saveUpi"><strong>Save UPI ID for future payments</strong></label>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- Pay Now Button -->
+                           <button class="btn btn-primary w-100 pay-now-btn">
+                           <i class="fas fa-lock me-2"></i>Pay now
+                           </button>
+                        </div>
+                        <!-- Footer Links -->
+                        <div class="footer-links mb-5">
+                           <a href="#">Privacy policy</a>
+                           <a href="#">Cancellations</a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Right Section - Fixed Order Summary (Desktop Only) -->
+                  <div class="col-lg-5 right-section desktop-form-sections">
+                     <div class="order-summary">
+                        <!-- Cart Icon -->
+                        <div class="cart-icon-top">
+                           <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <!-- Product Items -->
+                            <div class="product-item">
+                                 <div class="product-image-wrapper">
+                                    <img class="cart__image blur-up lazyload" data-src="assets/images/cate2.png" src="assets/images/cate2.png" alt="" width="80" />
+                                 </div>
+                                 <div class="product-details">
+                                    <h6>Premium Embroidered Net Saree Collection</h6>
+                                    <p class="text-muted small mb-0 fm_lato">Color: Red</p>
+									<p class="text-muted small mb-0 fm_lato">Size: XL</p>
+									<p class="text-muted small mb-0 fm_lato">quantity:  2</p>
+                                 </div>
+                                 <div class="product-price fm_lato">
+                                    ₹4,500.00
+                                 </div>
+                              </div>
+                              <div class="product-item">
+                                 <div class="product-image-wrapper">
+                                    <img class="cart__image blur-up lazyload" data-src="assets/images/ps10-1.jpg" src="assets/images/ps10-1.jpg" alt="" width="80" />
+                                 </div>
+                                 <div class="product-details">
+                                    <h6>Timeless Wave Pattern Designer Lehenga</h6>
+                                    <p class="text-muted small mb-0 fm_lato">Color: ivory</p>
+									<p class="text-muted small mb-0 fm_lato">Size: XL</p>
+									<p class="text-muted small mb-0 fm_lato">quantity:  1</p>
+                                 </div>
+                                 <div class="product-price fm_lato">
+                                    ₹5,500.00
+                                 </div>
+                              </div>
+                        <!-- Discount Code -->
+                        <div class="discount-section">
+                           <input type="text" class="form-control" placeholder="Discount code">
+                           <button class="btn btn-outline-secondary">Apply</button>
+                        </div>
+                        <!-- Summary -->
+                        <div class="summary-line">
+                           <span>Subtotal · <small class="fm_lato"> 3 items </small></span>
+                           <span class="fm_lato">₹14,500.00</span>
+                        </div>
+                        <div class="summary-line">
+                           <span>Shipping</span>
+                           <span class="text-muted small fm_lato">FREE</span>
+                        </div>
+                        <div class="summary-total">
+                           <span>Total</span>
+                           <div>
+                              <span class="currency">INR</span>
+                              <span class="total-amount fm_lato">₹14,500.00</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Address Modal -->
+            <div class="modal fade" id="addressModal" tabindex="-1" aria-labelledby="addressModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h5 class="modal-title" id="addressModalLabel">Add Delivery Address</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <form id="addressForm">
+                           <!-- Country Selection -->
+                           <div class="mb-3">
+                              <label class="form-label">Country/Region</label>
+                              <select class="form-select" id="country">
+                                 <option selected>India</option>
+                              </select>
+                           </div>
+                           <!-- Name Fields -->
+                           <div class="row mb-3">
+                              <div class="col-md-6 mb-3 mb-md-0">
+                                 <label class="form-label">First name</label>
+                                 <input type="text" class="form-control" id="firstName" placeholder="First name">
+                              </div>
+                              <div class="col-md-6">
+                                 <label class="form-label">Last name *</label>
+                                 <input type="text" class="form-control" id="lastName" placeholder="Last name" required>
+                              </div>
+                           </div>
+                           <!-- Address -->
+                           <div class="mb-3">
+                              <label class="form-label">Address *</label>
+                              <div class="input-group">
+                                 <input type="text" class="form-control" id="address" placeholder="Address" required>
+                                 <span class="input-group-text bg-white border-start-0">
+                                 <i class="fas fa-search text-muted"></i>
+                                 </span>
+                              </div>
+                           </div>
+                           <!-- Apartment -->
+                           <div class="mb-3">
+                              <label class="form-label">Apartment, suite, etc.</label>
+                              <input type="text" class="form-control" id="apartment" placeholder="Apartment, suite, etc. (optional)">
+                           </div>
+                           <!-- City, State, ZIP -->
+                           <div class="row mb-3">
+                              <div class="col-md-4 mb-3 mb-md-0">
+                                 <label class="form-label">City *</label>
+                                 <input type="text" class="form-control" id="city" placeholder="City" required>
+                              </div>
+                              <div class="col-md-4 mb-3 mb-md-0">
+                                 <label class="form-label">State *</label>
+                                 <select class="form-select" id="state" required>
+                                    <option value="">State</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Delhi</option>
+                                    <option>Gujarat</option>
+                                    <option>Karnataka</option>
+                                    <option>Tamil Nadu</option>
+                                 </select>
+                              </div>
+                              <div class="col-md-4">
+                                 <label class="form-label">PIN code *</label>
+                                 <input type="text" class="form-control" id="pincode" placeholder="PIN code" required maxlength="6">
+                              </div>
+                           </div>
+                           <!-- Phone -->
+                           <div class="mb-3">
+                              <label class="form-label">Phone Number *</label>
+                              <input type="tel" class="form-control" id="phone" placeholder="Phone number" required maxlength="10">
+                           </div>
+                           <!-- Save Info Checkbox -->
+                           <div class="customCheckbox cart_tearm">
+                              <input type="checkbox" class="form-check-input" id="saveInfo" value="" checked>
+                              <label for="saveInfo"><strong>Save this information for next time</strong></label>
+                           </div>
+                        </form>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" onclick="saveAddress()">Save Address</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Login Modal -->
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                     <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body px-5 pb-5">
+                        <div class="text-center mb-4">
+                           <div class="login-icon mb-3">
+                              <i class="fas fa-user-circle"></i>
+                           </div>
+                           <h4 class="mb-2">Welcome Back</h4>
+                           <p class="text-muted">Sign in to continue your shopping</p>
+                        </div>
+                        <form id="loginForm">
+                           <!-- Email/Phone Input -->
+                           <div class="mb-3">
+                              <label class="form-label">Email or Phone Number</label>
+                              <div class="input-group">
+                                 <span class="input-group-text bg-white">
+                                 <i class="fas fa-envelope text-muted"></i>
+                                 </span>
+                                 <input type="text" class="form-control" placeholder="Enter email or phone" required>
+                              </div>
+                           </div>
+                           <!-- Password Input -->
+                           <div class="mb-3">
+                              <label class="form-label">Password</label>
+                              <div class="input-group">
+                                 <span class="input-group-text bg-white">
+                                 <i class="fas fa-lock text-muted"></i>
+                                 </span>
+                                 <input type="password" class="form-control" id="loginPassword" placeholder="Enter password" required>
+                                 <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                 <i class="fas fa-eye"></i>
+                                 </button>
+                              </div>
+                           </div>
+                           <!-- Remember Me & Forgot Password -->
+                           <div class="d-flex justify-content-between align-items-center mb-4">
+                              <div class="customCheckbox cart_tearm">
+                                 <input type="checkbox" class="form-check-input" id="rememberMe" value="">
+                                 <label for="rememberMe">Remember me</label>
+                              </div>
+                              <a href="#" class="forgot-link">Forgot password?</a>
+                           </div>
+                           <!-- Sign In Button -->
+                           <button type="submit" class="btn btn-primary w-100 mb-3">
+                           <i class="fas fa-sign-in-alt me-2"></i>Sign In
+                           </button>
+                           <!-- Sign Up Link -->
+                           <div class="text-center">
+                              <p class="mb-0 text-muted">Don't have an account? <a href="#" class="sign-up-link">Sign up</a></p>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--End Main Content-->
+      </div>
+      <!--End Body Container-->
+  
+      <!-- Including Jquery -->
+      <script src="assets/js/jquery-min.js"></script>
+      <script src="assets/js/js.cookie.js"></script>
+      <!--Including Javascript-->
+      <script src="assets/js/plugins.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script>
+         // Toggle password visibility
+         document.getElementById('togglePassword')?.addEventListener('click', function() {
+             const passwordInput = document.getElementById('loginPassword');
+             const icon = this.querySelector('i');
+             
+             if (passwordInput.type === 'password') {
+                 passwordInput.type = 'text';
+                 icon.classList.remove('fa-eye');
+                 icon.classList.add('fa-eye-slash');
+             } else {
+                 passwordInput.type = 'password';
+                 icon.classList.remove('fa-eye-slash');
+                 icon.classList.add('fa-eye');
+             }
+         });
+         
+         // Save Address Function
+         function saveAddress() {
+             const firstName = document.getElementById('firstName').value;
+             const lastName = document.getElementById('lastName').value;
+             const address = document.getElementById('address').value;
+             const apartment = document.getElementById('apartment').value;
+             const city = document.getElementById('city').value;
+             const state = document.getElementById('state').value;
+             const pincode = document.getElementById('pincode').value;
+             const phone = document.getElementById('phone').value;
+         
+             // Validation
+             if (!lastName || !address || !city || !state || !pincode || !phone) {
+                 alert('Please fill all required fields');
+                 return;
+             }
+         
+             // Format full name
+             const fullName = firstName ? `${firstName} ${lastName}` : lastName;
+         
+             // Format full address
+             const fullAddress = apartment ? `${address}, ${apartment}` : address;
+             const cityStatePin = `${city}, ${state} - ${pincode}`;
+         
+             // Update address card
+             document.getElementById('savedName').textContent = fullName;
+             document.getElementById('savedAddress').textContent = fullAddress;
+             document.getElementById('savedCityState').textContent = cityStatePin;
+             document.getElementById('savedContact').textContent = `Phone: ${phone}`;
+         
+             // Show saved address card and hide add button
+             document.getElementById('savedAddressCard').style.display = 'block';
+             document.getElementById('addAddressBtn').style.display = 'none';
+         
+             // Close modal
+             const modal = bootstrap.Modal.getInstance(document.getElementById('addressModal'));
+             modal.hide();
+         }
+         
+         // Edit Address Function
+         function editAddress() {
+             // Show modal to edit
+             const modal = new bootstrap.Modal(document.getElementById('addressModal'));
+             modal.show();
+         }
+         
+         // UPI Verify Button
+         document.getElementById('verifyUpiBtn')?.addEventListener('click', function() {
+             const upiId = document.getElementById('upiId').value;
+             if (upiId) {
+                 alert('UPI ID verified successfully!');
+                 this.innerHTML = '<i class="fas fa-check-circle me-2"></i>Verified';
+                 this.classList.remove('btn-outline-primary');
+                 this.classList.add('btn-success');
+                 this.disabled = true;
+             } else {
+                 alert('Please enter a valid UPI ID');
+             }
+         });
+         
+         // Login Form Submit
+         document.getElementById('loginForm')?.addEventListener('submit', function(e) {
+             e.preventDefault();
+             alert('Login functionality will be implemented');
+         });
+      </script>
+   </body>
+</html>

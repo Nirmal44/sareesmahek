@@ -1303,13 +1303,7 @@
     /*----------------------------------
      24. Visitor Fake Message
      ------------------------------------*/
-    var userLimit = $(".userViewMsg").attr('data-user'),
-            userTime = $(".userViewMsg").attr('data-time');
-    $(".uersView").text(Math.floor((Math.random() * userLimit)));
-    setInterval(function () {
-        $(".uersView").text(Math.floor((Math.random() * userLimit)));
-    }, userTime);
-
+   
     /*-----------------------------------
      25. Tabs With Accordian Responsive
      -------------------------------------*/
